@@ -32,6 +32,9 @@
                     console.log(" Error ",e);
                 }
             }
+            function redirectMeBack(){
+                window.close();
+            }
         </script>
     </head>
     <body>
@@ -43,10 +46,24 @@
             This is content inside iframe
         </div>
         <div>
+            <h1>Storage Permission Required in Safari</h1>
+            <h3>Follow below mentioned instruction to proceed further:</h3>
+            <div>
+                <li>
+                    <a href="https://tangerine-pastelito-567319.netlify.app/">Click here</a> which will open some page in new tab
+                </li>
+                <li>
+                    Close that page by clicking on <strong>Redirect me back</strong> button
+                </li>
+                <li>
+                    Click in this frame button called <strong>Ask Storage Permission</strong>
+                </li>
+            </div>
             <a href="https://tangerine-pastelito-567319.netlify.app/">Click here</a> and open this page in new tab, then close it and come back to this page.
         </div>
         <button onClick="setCookie()">Set Cookie</button>
         <button onClick="checkStoragePermission()">Check Storage Permission</button>
         <button onClick="askStoragePermission()">Ask Storage Permission</button>
+        <button onClick="redirectMeBack()">Redirect me back</button>
     </body>
 </html>
